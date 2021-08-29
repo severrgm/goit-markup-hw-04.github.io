@@ -111,14 +111,57 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+.mail .tel {
+  display: inline-flex;
+}
+.mail::before {
+  display: inline-block;
+  align-self: center;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  content: "";
+
+  background-image: url(../img/mail.svg);
+  background-size: contain;
+}
+.tel::before {
+  display: inline-block;
+  align-self: center;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  content: "";
+
+  background-image: url(../img/tel.svg);
+  background-size: contain;
+}
 
 /*-----HERO-----*/
 
 .hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #2f303a;
+
   text-align: center;
+}
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2f303a;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+
+  background-image: url(../img/imghero.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 h1 {
@@ -179,6 +222,35 @@ h1 {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+
+.benefits-item::before {
+  display: block;
+  content: "";
+  margin-bottom: 30px;
+  height: 120px;
+
+  background-size: contain;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+.icon-antenna::before {
+  background-image: url(../img/benefit1.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../img/benefit2.svg);
+}
+
+.icon-plan::before {
+  background-image: url(../img/benefit3.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../img/benefit4.svg);
+}
+
 /*-----WORK-----*/
 
 .work-section {
