@@ -506,6 +506,10 @@ h3 {
   fill: var(--accent-color);
 }
 
+.clients-icon {
+  fill: #afb1b8;
+}
+
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
