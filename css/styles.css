@@ -375,6 +375,7 @@ p {
 
 .footer {
   background-color: #2f303a;
+  display: flex;
 }
 
 .footer-logo {
@@ -514,6 +515,34 @@ h3 {
   border-radius: 4px;
 }
 
+.clients-item:hover .clients-icon,
+.clients-item:focus .clients-icon {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
 .clients-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.footer-socials {
+  display: flex;
+}
+.footer-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-socials-box {
+  display: block;
+}
+
+.address-container {
+  padding-right: 0px;
 }
