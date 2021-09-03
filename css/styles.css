@@ -134,12 +134,11 @@ img {
   background-color: #2f303a;
 
   background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  );
-
-  background-image: url(../img/imghero.jpg);
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/imghero.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -426,12 +425,16 @@ h3 {
   letter-spacing: 0.03em;
   color: #212121;
   background-color: #f5f4fa;
+  border: currentColor;
+  border-radius: 4px;
 }
 
 .btn-item:hover,
 .btn-item:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .works-container {
   padding: 20px 24px 20px 24px;
@@ -473,6 +476,12 @@ h3 {
   color: var(--main-text-color);
 }
 
+.works-link:hover .link,
+.works-link:focus .link {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /*-----CLIENTS-----*/
 
 .clients-section {
@@ -502,8 +511,12 @@ h3 {
 
 .clients-item:hover .clients-icon,
 .clients-item:focus .clients-icon {
-  border-color: var(--accent-color);
   fill: var(--accent-color);
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border-color: var(--accent-color);
 }
 
 .clients-icon {
@@ -512,6 +525,12 @@ h3 {
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
 }
 
 .footer-socials {
