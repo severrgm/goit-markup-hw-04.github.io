@@ -128,7 +128,7 @@ img {
 }
 .overlay {
   max-width: 1600px;
-  height: 600px;
+
   margin-left: auto;
   margin-right: auto;
   background-color: #2f303a;
@@ -531,9 +531,10 @@ h3 {
 }
 
 .clients-link {
+  height: 92px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding-top: 16px;
 }
 
 .footer-socials {
